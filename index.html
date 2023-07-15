@@ -4,43 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
+    <title>News Nexus</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 </head>
 <body>
-
+    
     <nav>
         <div class="main-nav container flex">
             <a href="#" onclick="reload()" class="company-logo">
-                <img src="Photos/The1.png" alt="company logo">
+                <img src="./assets/result2.png" alt="company logo">
             </a>
             <div class="nav-links">
                 <ul class="flex">
-                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
                     <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
                     <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
-                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
-                    <li class="hover-link nav-item" id="world" onclick="onNavItemClick('world')">World</li>
-                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
-                    <li class="hover-link nav-item" id="lifestyle" onclick="onNavItemClick('lifestyle')">Lifestyle</li>
-                    <li class="hover-link nav-item" id="trending" onclick="onNavItemClick('trending')">Trendig</li>
                 </ul>
             </div>
             <div class="search-bar flex">
-                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g. Virat Kohli">
                 <button id="search-button" class="search-button">Search</button>
             </div>
         </div>
     </nav>
-    
 
     <main>
         <div class="cards-container container flex" id="cards-container">
             
         </div>
     </main>
-
+    
     <template id="template-news-card">
         <div class="card">
             <div class="card-header">
@@ -53,6 +47,9 @@
             </div>
         </div>
     </template>
-    <script src="script.js"></script>
+
+    <script src="index.js"></script>
+    
+      
 </body>
-</html> 
+</html>
